@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html>
+  <meta charset="UTF-8">
 
 <head>
+
+<link rel="stylesheet" href="styles.css">
+<title>A hÃ¡lÃ³zati cÃ­mfordÃ­tÃ¡s</title>
 </head>
 
 <body>
-  <div>
-    A hálózati címfordítás*
 
-    A hálózati címfordítás (angolul Network Address Translation, röviden NAT) a csomagszûrõ tûzfalak, illetve a címfordításra képes hálózati eszközök (pl. router) kiegészítõ szolgáltatása, mely lehetõvé teszi a belsõ hálózatra kötött gépek közvetlen kommunikációját tetszõleges protokollokon keresztül külsõ gépekkel anélkül, hogy azoknak saját nyilvános IP-címmel kellene rendelkezniük. Címfordításra akár egyetlen számítógép is képes, így valósítható meg például az internet-kapcsolat megosztás is, amikor a megosztó gép a saját publikus címébe fordítja bele a megosztást kihasználó kliens gép forgalmát. Az egész címfordítás témaköre abból az igénybõl nõtte ki magát, hogy az IPv4 tartománya viszonylag kevés, 232=2564, azaz 4 294 967 296 db egyedi IP címet tesz ki. Ebben persze benne van az összes broadcast cím és a külsõ hálózatra nem route-olható belsõ címtartományok is, tehát az interneten globálisan használható címek összessége így még kevesebb. A gépek hálózati kártyái egynél több címet is felvehetnek egyszerre ha kell, illetve nemcsak a számítógépeknek, hanem szinte az összes fontosabb hálózati eszköznek is szüksége van legalább egy címre. Belátható, hogy így a soknak tûnõ 4 milliárd cím világviszonylatban már sajnos kevés.
+  <div class="frame">
+  <img src="ipv4fogyas.png" alt="IPcalypse" title="IPcalypse">
+<p class="imgtitle">AZ IPv4 cÃ­mek fogyÃ¡sa</p>
 
-    Mûködése
 
-    A hálózati címfordító a belsõ gépekrõl érkezõ csomagokat az internetre továbbítás elõtt úgy módosítja, hogy azok feladójaként saját magát tünteti fel, így az azokra érkezõ válaszcsomagok is hozzá kerülnek majd továbbításra, amiket – a célállomás címének módosítása után – a belsõ hálózaton elhelyezkedõ eredeti feladó részére ad át. Ebbõl kifolyólag ez minden esetben egy aktív hálózati eszközt igényel, amely folyamatosan figyeli az érkezõ csomagokat és azok feladói és címzettjei alapján elvégzi a szükséges módosításokat. Ez többnyire egy tûzfal, amely megfelelõen szétválasztja a külsõ internetet a belsõ hálózattól. Innen származik a terminológia is: a külsõ, illetve belsõ hálózat fogalma. A belsõ hálózatnak olyan címtartományt kell adni, amelyet minden hálózati eszköz a nemzetközi szabványoknak megfelelõen belsõnek ismer el, és így azokat nem irányítja közvetlenül a külsõ hálózat felé. A belsõ címeket az alábbi táblázat mutatja be:
+</div>
+  <div id="content">
+
+    <h1>A hï¿½lï¿½zati cï¿½mfordï¿½tï¿½s <a href="https://hu.wikipedia.org/wiki/HÃ¡lÃ³zati_cÃ­mfordÃ­tÃ¡s" target="_blank"  >*</a>
+</h1>
+
+
+
+
+    <p>A hï¿½lï¿½zati cï¿½mfordï¿½tï¿½s (angolul <b>Network Address Translation</b>, rï¿½viden <b>NAT</b>) a csomagszï¿½rï¿½ tï¿½zfalak, illetve a cï¿½mfordï¿½tï¿½sra kï¿½pes hï¿½lï¿½zati eszkï¿½zï¿½k (pl. router) kiegï¿½szï¿½tï¿½ szolgï¿½ltatï¿½sa, mely lehetï¿½vï¿½ teszi a belsï¿½ hï¿½lï¿½zatra kï¿½tï¿½tt gï¿½pek kï¿½zvetlen kommunikï¿½ciï¿½jï¿½t tetszï¿½leges protokollokon keresztï¿½l kï¿½lsï¿½ gï¿½pekkel anï¿½lkï¿½l, hogy azoknak sajï¿½t nyilvï¿½nos IP-cï¿½mmel kellene rendelkezniï¿½k. Cï¿½mfordï¿½tï¿½sra akï¿½r egyetlen szï¿½mï¿½tï¿½gï¿½p is kï¿½pes, ï¿½gy valï¿½sï¿½thatï¿½ meg pï¿½ldï¿½ul az internet-kapcsolat megosztï¿½s is, amikor a megosztï¿½ gï¿½p a sajï¿½t publikus cï¿½mï¿½be fordï¿½tja bele a megosztï¿½st kihasznï¿½lï¿½ kliens gï¿½p forgalmï¿½t. Az egï¿½sz cï¿½mfordï¿½tï¿½s tï¿½makï¿½re abbï¿½l az igï¿½nybï¿½l nï¿½tte ki magï¿½t, hogy az IPv4 tartomï¿½nya viszonylag kevï¿½s, 232=2564, azaz 4 294 967 296 db egyedi IP cï¿½met tesz ki. Ebben persze benne van az ï¿½sszes broadcast cï¿½m ï¿½s a kï¿½lsï¿½ hï¿½lï¿½zatra nem route-olhatï¿½ belsï¿½ cï¿½mtartomï¿½nyok is, tehï¿½t az interneten globï¿½lisan hasznï¿½lhatï¿½ cï¿½mek ï¿½sszessï¿½ge ï¿½gy mï¿½g kevesebb. A gï¿½pek hï¿½lï¿½zati kï¿½rtyï¿½i egynï¿½l tï¿½bb cï¿½met is felvehetnek egyszerre ha kell, illetve nemcsak a szï¿½mï¿½tï¿½gï¿½peknek, hanem szinte az ï¿½sszes fontosabb hï¿½lï¿½zati eszkï¿½znek is szï¿½ksï¿½ge van legalï¿½bb egy cï¿½mre. Belï¿½thatï¿½, hogy ï¿½gy a soknak tï¿½nï¿½ 4 milliï¿½rd cï¿½m vilï¿½gviszonylatban mï¿½r sajnos kevï¿½s.</p>
+
+    <h2>Mï¿½kï¿½dï¿½se</h2>
+
+    <p>A hï¿½lï¿½zati cï¿½mfordï¿½tï¿½ a belsï¿½ gï¿½pekrï¿½l ï¿½rkezï¿½ csomagokat az internetre tovï¿½bbï¿½tï¿½s elï¿½tt ï¿½gy mï¿½dosï¿½tja, hogy azok feladï¿½jakï¿½nt sajï¿½t magï¿½t tï¿½nteti fel, ï¿½gy az azokra ï¿½rkezï¿½ vï¿½laszcsomagok is hozzï¿½ kerï¿½lnek majd tovï¿½bbï¿½tï¿½sra, amiket ï¿½ a cï¿½lï¿½llomï¿½s cï¿½mï¿½nek mï¿½dosï¿½tï¿½sa utï¿½n ï¿½ a belsï¿½ hï¿½lï¿½zaton elhelyezkedï¿½ eredeti feladï¿½ rï¿½szï¿½re ad ï¿½t. Ebbï¿½l kifolyï¿½lag ez minden esetben egy aktï¿½v hï¿½lï¿½zati eszkï¿½zt igï¿½nyel, amely folyamatosan figyeli az ï¿½rkezï¿½ csomagokat ï¿½s azok feladï¿½i ï¿½s cï¿½mzettjei alapjï¿½n elvï¿½gzi a szï¿½ksï¿½ges mï¿½dosï¿½tï¿½sokat. Ez tï¿½bbnyire egy tï¿½zfal, amely megfelelï¿½en szï¿½tvï¿½lasztja a kï¿½lsï¿½ internetet a belsï¿½ hï¿½lï¿½zattï¿½l. Innen szï¿½rmazik a terminolï¿½gia is: a kï¿½lsï¿½, illetve belsï¿½ hï¿½lï¿½zat fogalma. A belsï¿½ hï¿½lï¿½zatnak olyan cï¿½mtartomï¿½nyt kell adni, amelyet minden hï¿½lï¿½zati eszkï¿½z a nemzetkï¿½zi szabvï¿½nyoknak megfelelï¿½en belsï¿½nek ismer el, ï¿½s ï¿½gy azokat nem irï¿½nyï¿½tja kï¿½zvetlenï¿½l a kï¿½lsï¿½ hï¿½lï¿½zat felï¿½. A belsï¿½ cï¿½meket az alï¿½bbi tï¿½blï¿½zat mutatja be:</p>
     
-    A címfordítás segítségével megoldható, hogy akár egy egész cég teljes belsõ hálózati forgalma egyetlen külsõ IP cím mögött legyen, azaz gyakorlatilag egyetlen külsõ címet használ el egy több száz gépes hálózat. A belsõ forgalomban természetesen szükség van az egyedi belsõ címekre, de errõl csak a címfordítást végzõ hálózati eszközöknek kell tudnia, kifelé ennek részletei már nem látható információk. Így létrejöhet olyan gazdaságos konfiguráció is, hogy egy viszonylag nagy cég teljes külsõ címfoglalása 10-20 db cím, míg a belsõ forgalmukban akár több ezer belsõ cím is lehet. Nagy elõnye ennek a technikának, hogy ugyanazt a belsõ tartományt nyugodtan használhatja bárki más is, amíg mindegyik egyedi külsõ cím mögé van fordítva, ez nem okoz zavart. Akár az összes NAT-ot használó cég belsõ hálózatában lehet minden gép a 10.0.0.0 tartományban, ha kifelé valóban egyedi címmel látszanak. Éppen a címfordítás technológiája miatt nem került gyorsabban bevezetésre az IPv6 szabvány, amely kifejlesztésének egyik oka az IPv4 fogyatkozó címtartományának kiváltása volt.
+<table>
+<tr>
+  <td>RFC1918</td>
+  <td>IP cÃ­mtartomÃ¡ny</td>
+  <td>egyedi cÃ­mek szÃ¡ma</td>
+</tr>
+
+<tr>
+  <td>24-bit block</td>
+  <td>10.0.0.0 - 10.255.255.255</td>
+  <td>16 777 216 db</td>
+</tr>
+
+<tr>
+  <td>20-bit block</td>
+  <td>172.16.0.0 - 172.31.255.255</td>
+  <td>1 048 576 db</td>
+</tr>
+
+<tr>
+  <td>16-bit block</td>
+  <td>192.168.0.0 - 192.168.255.255</td>
+  <td>65 536 db</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+    <p>A cï¿½mfordï¿½tï¿½s segï¿½tsï¿½gï¿½vel megoldhatï¿½, hogy akï¿½r egy egï¿½sz cï¿½g teljes belsï¿½ hï¿½lï¿½zati forgalma egyetlen kï¿½lsï¿½ IP cï¿½m mï¿½gï¿½tt legyen, azaz gyakorlatilag egyetlen kï¿½lsï¿½ cï¿½met hasznï¿½l el egy tï¿½bb szï¿½z gï¿½pes hï¿½lï¿½zat. A belsï¿½ forgalomban termï¿½szetesen szï¿½ksï¿½g van az egyedi belsï¿½ cï¿½mekre, de errï¿½l csak a cï¿½mfordï¿½tï¿½st vï¿½gzï¿½ hï¿½lï¿½zati eszkï¿½zï¿½knek kell tudnia, kifelï¿½ ennek rï¿½szletei mï¿½r nem lï¿½thatï¿½ informï¿½ciï¿½k. ï¿½gy lï¿½trejï¿½het olyan gazdasï¿½gos konfigurï¿½ciï¿½ is, hogy egy viszonylag nagy cï¿½g teljes kï¿½lsï¿½ cï¿½mfoglalï¿½sa 10-20 db cï¿½m, mï¿½g a belsï¿½ forgalmukban akï¿½r tï¿½bb ezer belsï¿½ cï¿½m is lehet. Nagy elï¿½nye ennek a technikï¿½nak, hogy ugyanazt a belsï¿½ tartomï¿½nyt nyugodtan hasznï¿½lhatja bï¿½rki mï¿½s is, amï¿½g mindegyik egyedi kï¿½lsï¿½ cï¿½m mï¿½gï¿½ van fordï¿½tva, ez nem okoz zavart. Akï¿½r az ï¿½sszes NAT-ot hasznï¿½lï¿½ cï¿½g belsï¿½ hï¿½lï¿½zatï¿½ban lehet minden gï¿½p a 10.0.0.0 tartomï¿½nyban, ha kifelï¿½ valï¿½ban egyedi cï¿½mmel lï¿½tszanak. ï¿½ppen a cï¿½mfordï¿½tï¿½s technolï¿½giï¿½ja miatt nem kerï¿½lt gyorsabban bevezetï¿½sre az IPv6 szabvï¿½ny, amely kifejlesztï¿½sï¿½nek egyik oka az IPv4 fogyatkozï¿½ cï¿½mtartomï¿½nyï¿½nak kivï¿½ltï¿½sa volt.</p>
 
   </div>
 </body>
